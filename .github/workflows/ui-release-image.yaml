@@ -8,7 +8,7 @@ on:
         type: string
 
 env:
-  WREN_UI_IMAGE: ghcr.io/canner/wren-ui
+  WREN_UI_IMAGE: ghcr.io/imani/wren-ui
 
 defaults:
   run:
