@@ -13,7 +13,7 @@ require('../styles/index.less');
 Spin.setDefaultIndicator(defaultIndicator);
 
 function App({ Component, pageProps }: AppProps) {
-  return (
+      return (
     <>
       <Head>
         <title>Wren AI</title>
