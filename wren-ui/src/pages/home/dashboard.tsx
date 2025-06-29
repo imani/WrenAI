@@ -49,7 +49,7 @@ export default function Dashboard() {
   } = useDashboardQuery({
     fetchPolicy: 'cache-and-network',
     onError: () => {
-      message.error('Failed to fetch dashboard items.');
+      message.error('دریافت موارد داشبورد ناموفق بود.');
       router.push(Path.Home);
     },
   });
@@ -61,19 +61,19 @@ export default function Dashboard() {
   const [setDashboardSchedule] = useSetDashboardScheduleMutation({
     refetchQueries: ['Dashboard'],
     onCompleted: () => {
-      message.success('Successfully updated dashboard schedule.');
+      message.success('به‌روزرسانی داشبورد با موفقیت به‌روزرسانی شد.');
     },
     onError: (error) => console.error(error),
   });
 
   const [updateDashboardItemLayouts] = useUpdateDashboardItemLayoutsMutation({
     onError: () => {
-      message.error('Failed to update dashboard item layouts.');
+      message.error('به‌روزرسانی چیدمان موارد داشبورد ناموفق بود.');
     },
   });
   const [deleteDashboardItem] = useDeleteDashboardItemMutation({
     onCompleted: (_, query) => {
-      message.success('Successfully deleted dashboard item.');
+      message.success('مورد داشبورد با موفقیت حذف شد.');
       onRemoveDashboardItemFromQueryCache(query.variables.where.id);
     },
   });

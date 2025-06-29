@@ -40,7 +40,7 @@ export default function APIHistory() {
 
   const columns: TableColumnsType<ApiHistoryResponse> = [
     {
-      title: 'Timestamp',
+      title: 'زمان ثبت',
       dataIndex: 'createdAt',
       key: 'createdAt',
       width: 180,
@@ -49,7 +49,7 @@ export default function APIHistory() {
       ),
     },
     {
-      title: 'API type',
+      title: 'نوع API',
       dataIndex: 'apiType',
       key: 'apiType',
       width: 180,
@@ -64,7 +64,7 @@ export default function APIHistory() {
       filterMultiple: false,
     },
     {
-      title: 'Status',
+      title: 'وضعیت',
       dataIndex: 'statusCode',
       key: 'statusCode',
       width: 100,
@@ -87,7 +87,7 @@ export default function APIHistory() {
       filterMultiple: false,
     },
     {
-      title: 'Question / SQL',
+      title: 'سؤال / SQL',
       dataIndex: 'requestPayload',
       key: 'requestPayload',
       render: (payload: Record<string, any>, record: ApiHistoryResponse) => {
@@ -104,7 +104,7 @@ export default function APIHistory() {
       },
     },
     {
-      title: 'Thread ID',
+      title: 'شناسه نخ',
       dataIndex: 'threadId',
       key: 'threadId',
       width: 200,
@@ -127,7 +127,7 @@ export default function APIHistory() {
       }),
     },
     {
-      title: 'Duration (ms)',
+      title: 'مدت زمان (میلی‌ثانیه)',
       dataIndex: 'durationMs',
       key: 'durationMs',
       width: 124,
@@ -136,7 +136,7 @@ export default function APIHistory() {
       ),
     },
     {
-      title: 'Actions',
+      title: 'عملیات',
       key: 'actions',
       width: 110,
       align: 'center',
@@ -148,7 +148,7 @@ export default function APIHistory() {
           size="small"
           onClick={() => detailsDrawer.openDrawer(record)}
         >
-          <EyeOutlined /> Details
+          <EyeOutlined /> جزئیات
         </Button>
       ),
     },
@@ -160,21 +160,20 @@ export default function APIHistory() {
         title={
           <>
             <ApiOutlined className="mr-2 gray-8" />
-            API history
+            تاریخچه API
           </>
         }
         description={
           <>
             <div>
-              Here you can view the full history of API calls, including request
-              inputs, responses, and execution details.{' '}
+              در اینجا می‌توانید تاریخچه کامل تماس‌های API را مشاهده کنید، شامل ورودی‌های درخواست، پاسخ‌ها و جزئیات اجرا.{' '}
               <Link
                 className="gray-8 underline mr-2"
                 href="https://docs.getwren.ai/oss/guide/api-access/history"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Learn more.
+                اطلاعات بیشتر.
               </Link>
             </div>
           </>
