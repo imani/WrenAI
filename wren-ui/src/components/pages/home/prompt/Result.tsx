@@ -87,7 +87,7 @@ const makeProcessing = (text: string) => (props: Props) => {
           disabled={loading}
         >
           <StopOutlined className="-mr-1" />
-          Stop
+          توقف
         </Button>
       </div>
     </Wrapper>
@@ -119,7 +119,7 @@ const makeProcessingError =
             onClick={onClose}
           >
             <CloseOutlined className="-mr-1" />
-            Close
+            بستن
           </Button>
         </div>
         <div className="gray-7">
@@ -146,7 +146,7 @@ const Failed = makeProcessingError({
   icon: <ErrorIcon />,
 });
 
-const Understanding = makeProcessing('Understanding question');
+const Understanding = makeProcessing('درک سؤال');
 
 const IntentionFinished = (props: Props) => {
   const { data, onIntentSQLAnswer } = props;
@@ -216,7 +216,7 @@ const GeneralAnswer = (props: Props) => {
           {isDone && (
             <div className="gray-6">
               <InfoCircleOutlined className="mr-2" />
-              For the most accurate semantics, please visit the modeling page.
+              برای دقیق‌ترین معانی، لطفاً به صفحه مدل‌سازی مراجعه کنید.
             </div>
           )}
         </div>
@@ -234,7 +234,7 @@ const GeneralAnswer = (props: Props) => {
 
 const MisleadingQuery = makeProcessingError({
   icon: <WarningOutlined className="mr-2 text-lg gold-6" />,
-  title: 'Clarification needed',
+  title: 'نیاز به توضیح بیشتر',
 });
 
 const getGeneralAnswerStateComponent = (state: PROCESS_STATE) => {

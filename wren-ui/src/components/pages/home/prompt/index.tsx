@@ -30,7 +30,7 @@ interface Props {
   data: AskPromptData;
   loading: boolean;
   inputProps: {
-    placeholder: string;
+    placeholder?: string;
   };
 }
 
