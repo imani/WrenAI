@@ -288,7 +288,7 @@ export default function AnswerResult(props: Props) {
                 key={ANSWER_TAB_KEYS.ANSWER}
                 tab={
                   <div className="select-none">
-                    <CheckCircleFilled className="mr-2" />
+                    <CheckCircleFilled className="ml-2" />
                     <Text>Answer</Text>
                   </div>
                 }
@@ -300,7 +300,7 @@ export default function AnswerResult(props: Props) {
               key={ANSWER_TAB_KEYS.VIEW_SQL}
               tab={
                 <div className="select-none">
-                  <CodeFilled className="mr-2" />
+                  <CodeFilled className="ml-2" />
                   <Text>View SQL</Text>
                 </div>
               }
@@ -311,7 +311,7 @@ export default function AnswerResult(props: Props) {
               key="chart"
               tab={
                 <div className="select-none">
-                  <PieChartFilled className="mr-2" />
+                  <PieChartFilled className="ml-2" />
                   <Text>
                     Chart<Tag className="adm-beta-tag">Beta</Tag>
                   </Text>
@@ -330,7 +330,7 @@ export default function AnswerResult(props: Props) {
               <Button
                 type="link"
                 size="small"
-                className="mr-2"
+                className="ml-2"
                 onClick={() =>
                   onOpenSaveToKnowledgeModal(
                     {
@@ -345,7 +345,7 @@ export default function AnswerResult(props: Props) {
                 data-guideid="save-to-knowledge"
               >
                 <div className="d-flex align-center">
-                  <RobotSVG className="mr-2" />
+                  <RobotSVG className="ml-2" />
                   Save to knowledge
                 </div>
               </Button>

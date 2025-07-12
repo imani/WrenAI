@@ -133,7 +133,7 @@ export default function ViewSQLTabContent(props: AnswerResultProps) {
             {nativeSQLResult.nativeSQLMode ? (
               <>
                 <Image
-                  className="mr-2"
+                  className="ml-2"
                   src={DATA_SOURCE_OPTIONS[dataSourceType].logo}
                   alt={DATA_SOURCE_OPTIONS[dataSourceType].label}
                   width="22"
@@ -161,7 +161,7 @@ export default function ViewSQLTabContent(props: AnswerResultProps) {
                 <Switch
                   checkedChildren={<CheckOutlined />}
                   unCheckedChildren={<CloseOutlined />}
-                  className="mr-2"
+                  className="ml-2"
                   size="small"
                   checked={nativeSQLResult.nativeSQLMode}
                   loading={nativeSQLResult.loading}

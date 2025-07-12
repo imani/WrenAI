@@ -73,7 +73,7 @@ const makeProcessing = (text: string) => (props: Props) => {
     <Wrapper>
       <div className="d-flex justify-space-between">
         <span>
-          <LoadingOutlined className="mr-2 geekblue-6 text-lg" spin />
+          <LoadingOutlined className="ml-2 geekblue-6 text-lg" spin />
           {text}
         </span>
         <Button
@@ -140,7 +140,7 @@ const makeProcessingError =
     );
   };
 
-const ErrorIcon = () => <CloseCircleFilled className="mr-2 red-5 text-lg" />;
+const ErrorIcon = () => <CloseCircleFilled className="ml-2 red-5 text-lg" />;
 
 const Failed = makeProcessingError({
   icon: <ErrorIcon />,
@@ -193,7 +193,7 @@ const GeneralAnswer = (props: Props) => {
     <Wrapper>
       <div className="d-flex justify-space-between">
         <div className="d-flex align-start">
-          <MessageOutlined className="mr-2 mt-1 geekblue-6" />
+          <MessageOutlined className="ml-2 mt-1 geekblue-6" />
           <b className="text-semi-bold">{originalQuestion}</b>
         </div>
         <Button
@@ -215,7 +215,7 @@ const GeneralAnswer = (props: Props) => {
           <MarkdownBlock content={askingStreamTask} />
           {isDone && (
             <div className="gray-6">
-              <InfoCircleOutlined className="mr-2" />
+              <InfoCircleOutlined className="ml-2" />
               برای دقیق‌ترین معانی، لطفاً به صفحه مدل‌سازی مراجعه کنید.
             </div>
           )}
@@ -233,7 +233,7 @@ const GeneralAnswer = (props: Props) => {
 };
 
 const MisleadingQuery = makeProcessingError({
-  icon: <WarningOutlined className="mr-2 text-lg gold-6" />,
+  icon: <WarningOutlined className="ml-2 text-lg gold-6" />,
   title: 'نیاز به توضیح بیشتر',
 });
 

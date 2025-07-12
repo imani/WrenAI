@@ -69,7 +69,7 @@ export default function PromptInput(props: Props) {
       <PromptButton
         type="primary"
         size="large"
-        className="ml-3"
+        className="mr-3"
         onClick={handleAsk}
         disabled={isDisabled}
       >

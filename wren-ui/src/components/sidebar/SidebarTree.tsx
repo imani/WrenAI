@@ -29,7 +29,7 @@ const anticonStyle = css`
     }
   }
   .anticon + .anticon {
-    margin-left: 4px;
+    margin-right: 4px;
   }
 `;
 
@@ -104,7 +104,7 @@ const StyledTree = styled(Tree)`
 
         &--relation,
         &--primary {
-          margin-left: 4px;
+          margin-right: 4px;
         }
 
         &--group {

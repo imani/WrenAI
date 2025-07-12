@@ -59,7 +59,7 @@ export default function ViewTree(props: Props) {
             data-ph-capture="true"
             data-ph-capture-attribute-name="cta_add_view"
           >
-            New
+            جدید
           </GroupActionButton>
         ),
       },

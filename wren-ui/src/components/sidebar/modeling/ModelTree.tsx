@@ -121,7 +121,7 @@ export default function ModelTree(props: Props) {
             size="small"
             onClick={() => onOpenModelDrawer()}
           >
-            New
+            جدید
           </GroupActionButton>
         ),
       },
